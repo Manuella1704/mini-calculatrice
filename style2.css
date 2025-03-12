@@ -1,0 +1,93 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+/* Affichage du résultat */
+.resultat {
+    background: #000;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Boutons */
+.calculs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background: #3a3a3a;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #505050;
+}
+
+button:active {
+    background: #666;
+}
+
+/* Boutons spéciaux */
+.reinitialiser,
+.signe,
+.pourcentage {
+    background: #ff9500;
+}
+
+.reinitialiser:hover,
+.signe:hover,
+.pourcentage:hover {
+    background: #e08700;
+}
+
+.divise,
+.fois,
+.moins,
+.plus,
+.egal {
+    background: #ff2e63;
+}
+
+.divise:hover,
+.fois:hover,
+.moins:hover,
+.plus:hover,
+.egal:hover {
+    background: #d62853;
+}
+
+.zero {
+    grid-column: span 2;
+}
